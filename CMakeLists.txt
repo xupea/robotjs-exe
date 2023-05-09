@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 
 project("robotjs-exe")
 
-add_executable (robotjs "robotjs.cpp" "lib/mouse.c" "lib/types.h" "lib/deadbeef_rand.c" "lib/screen.c" "lib/xdisplay.c")
+add_executable (robotjs "robotjs.cpp" "lib/deadbeef_rand.c" "lib/mouse.c" "lib/keypress.c" "lib/keycode.c" "lib/screen.c")
 
 if(APPLE)
     find_library(COREFOUNDATION_LIBRARY CoreFoundation)
@@ -16,6 +16,7 @@ if(APPLE)
 elseif(WIN32)
     set(IS_WINDOWS TRUE)
 elseif(UNIX)
+    set(USE_X11 TRUE)
     find_package(PkgConfig REQUIRED)
     pkg_check_modules(X11 REQUIRED x11)
     pkg_check_modules(XTST REQUIRED xtst)
