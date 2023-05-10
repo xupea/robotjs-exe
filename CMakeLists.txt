@@ -1,12 +1,8 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.5.1)
 
 project("robotjs-exe")
 
 add_compile_options(-Wall)
-# add_compile_options(-Wparentheses)
-# add_compile_options(-Winline)
-# add_compile_options(-Wbad-function-cast)
-# add_compile_options(-Wdisabled-optimization)
 
 if(APPLE)
     add_executable (robotjs "main.cpp" "transformer.cpp" "lib/deadbeef_rand.c" "lib/mouse.c" "lib/keypress.c" "lib/keycode.c" "lib/screen.c")
