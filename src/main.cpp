@@ -2,7 +2,7 @@
 #include "transformer.h"
 
 #if defined(USE_X11)
-#include "vender/robotjs/xdisplay.h"
+#include "../vender/robotjs/xdisplay.h"
 #endif
 
 using namespace std;

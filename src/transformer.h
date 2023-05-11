@@ -1,10 +1,10 @@
 #include "utils.h"
 
-#include "vender/robotjs/mouse.h"
-#include "vender/robotjs/deadbeef_rand.h"
-#include "vender/robotjs/keypress.h"
-#include "vender/robotjs/screen.h"
-#include "vender/robotjs/microsleep.h"
+#include "../vender/robotjs/mouse.h"
+#include "../vender/robotjs/deadbeef_rand.h"
+#include "../vender/robotjs/keypress.h"
+#include "../vender/robotjs/screen.h"
+#include "../vender/robotjs/microsleep.h"
 
 using namespace std;
 
